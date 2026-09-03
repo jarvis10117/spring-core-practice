@@ -1,7 +1,4 @@
-package com.example;
-
-import org.springframework.stereotype.Component;
-
+package beans_prototype_2_rigisterBean.com.example;
 
 public class Parrot {
     private String name;

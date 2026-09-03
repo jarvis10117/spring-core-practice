@@ -1,6 +1,6 @@
-package config;
+package beans_prototype_1.config;
 
-import com.example.Parrot;
+import beans_prototype_1.com.example.Parrot;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

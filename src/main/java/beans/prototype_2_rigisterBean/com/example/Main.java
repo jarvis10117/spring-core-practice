@@ -1,6 +1,6 @@
-package beans_prototype_2_rigisterBean.com.example;
+package beans.prototype_2_rigisterBean.com.example;
 
-import beans_prototype_2_rigisterBean.config.ProjectConfig;
+import beans.prototype_2_rigisterBean.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.function.Supplier;

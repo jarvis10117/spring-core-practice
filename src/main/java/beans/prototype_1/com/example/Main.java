@@ -1,6 +1,6 @@
-package beans_prototype_1.com.example;
+package beans.prototype_1.com.example;
 
-import beans_prototype_1.config.ProjectConfig;
+import beans.prototype_1.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {

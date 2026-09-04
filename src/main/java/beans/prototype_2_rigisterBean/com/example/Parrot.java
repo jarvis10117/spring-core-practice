@@ -1,5 +1,4 @@
-package beans_prototype_1.com.example;
-
+package beans.prototype_2_rigisterBean.com.example;
 
 public class Parrot {
     private String name;

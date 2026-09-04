@@ -1,4 +1,8 @@
 package abstractions.repositories;
 
-public class CommentRepository {
+
+import abstractions.model.Comment;
+
+public interface CommentRepository {
+    void storeComment(Comment comment);
 }

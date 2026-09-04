@@ -1,4 +1,8 @@
 package abstractions.proxies;
 
-public class CommentNotificationProxy {
+
+import abstractions.model.Comment;
+
+public interface CommentNotificationProxy {
+    void sendComment(Comment comment);
 }

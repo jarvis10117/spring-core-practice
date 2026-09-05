@@ -10,16 +10,15 @@ import org.springframework.stereotype.Component;
 public class CommentService {
 
 //    Not recomanded to use @Autowired when you have only one constructor
-    @Autowired
-    private  CommentRepository commentRepository;
-    @Autowired
-    private  CommentNotificationProxy commentNotificationProxy;
 
-//    public CommentService(CommentRepository commentRepository,
-//                          CommentNotificationProxy commentNotificationProxy) {
-//        this.commentRepository = commentRepository;
-//        this.commentNotificationProxy = commentNotificationProxy;
-//    }
+    private final CommentRepository commentRepository;
+    private final CommentNotificationProxy commentNotificationProxy;
+
+    public CommentService(CommentRepository commentRepository,
+                          CommentNotificationProxy commentNotificationProxy) {
+        this.commentRepository = commentRepository;
+        this.commentNotificationProxy = commentNotificationProxy;
+    }
 
     public void publishComment(Comment comment) {
         commentRepository.storeComment(comment);

@@ -3,14 +3,10 @@ package abstractions_spring.service;
 import abstractions_spring.model.Comment;
 import abstractions_spring.proxies.CommentNotificationProxy;
 import abstractions_spring.repositories.CommentRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class CommentService {
-
-//    Not recomanded to use @Autowired when you have only one constructor
-
     private final CommentRepository commentRepository;
     private final CommentNotificationProxy commentNotificationProxy;
 

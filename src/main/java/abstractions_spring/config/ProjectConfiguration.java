@@ -5,7 +5,9 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan(
-        basePackages = {"abstractions.proxies","abstractions.service","abstractions.repositories"}
+        basePackages = {"abstractions_spring.proxies",
+                        "abstractions_spring.service",
+                        "abstractions_spring.repositories"}
 )
 public class ProjectConfiguration {
 }

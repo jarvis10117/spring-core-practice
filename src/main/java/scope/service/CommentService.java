@@ -6,9 +6,12 @@ import scope.repositories.CommentRepository;
 
 @Service
 public class CommentService {
-    @Autowired
-    private CommentRepository commentRepository ;
 
+    private final CommentRepository commentRepository;
+
+    public CommentService(CommentRepository commentRepository) {
+        this.commentRepository = commentRepository;
+    }
     public CommentRepository getCommentRepository() {
         return commentRepository;
     }

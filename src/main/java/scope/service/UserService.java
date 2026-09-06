@@ -1,13 +1,16 @@
 package scope.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import scope.repositories.CommentRepository;
 
 @Service
 public class UserService {
-    @Autowired
-    private CommentRepository commentRepository;
+
+    private final CommentRepository commentRepository;
+
+    public UserService(CommentRepository commentRepository) {
+        this.commentRepository = commentRepository;
+    }
 
     public CommentRepository getCommentRepository() {
         return commentRepository;

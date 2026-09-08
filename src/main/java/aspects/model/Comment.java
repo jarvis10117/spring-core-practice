@@ -17,4 +17,12 @@ public class Comment {
     public String getAuthor() {
         return author;
     }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "text='" + text + '\'' +
+                ", author='" + author + '\'' +
+                '}';
+    }
 }

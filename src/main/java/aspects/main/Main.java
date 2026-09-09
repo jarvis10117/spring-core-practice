@@ -3,7 +3,6 @@ package aspects.main;
 import aspects.config.ProjectConfig;
 import aspects.model.Comment;
 import aspects.service.CommentService;
-import aspects.service.UserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.logging.Logger;
@@ -21,8 +20,7 @@ public class Main {
         comment.setAuthor("Natasha");
 
         service.publishComment(comment);
-        service.deleteComment(comment);
-        service.editComment(comment);
+
 
     }
 }
